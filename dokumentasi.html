@@ -6,7 +6,27 @@
     <title>Dokumentasi - KKN Desa Cirama Girang</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* Existing CSS for gallery */
+
+        .header-text {
+    position: absolute;
+    flex-grow: 1; 
+    text-align: center;
+    padding-left: 120px; 
+
+    box-sizing: border-box;
+    margin-left: -13px;
+    margin-top: 50px;
+
+}
+
+.logo-kkn{
+    height: 150px;
+    width: auto;
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -300px;
+}
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -21,7 +41,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer; /* Add pointer cursor to indicate clickability */
+            cursor: pointer; 
         }
 
         .gallery img:hover {
@@ -29,9 +49,9 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Lightbox CSS */
+        
         .lightbox-overlay {
-            display: none; /* Hidden by default */
+            display: none; 
             position: fixed;
             top: 0;
             left: 0;
@@ -53,7 +73,7 @@
         .lightbox-content img {
             max-width: 100%;
             max-height: 100%;
-            object-fit: contain; /* Ensures the image fits within the bounds */
+            object-fit: contain; 
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
@@ -91,7 +111,7 @@
             right: 20px;
         }
 
-        /* Responsive adjustments for lightbox */
+        
         @media (max-width: 768px) {
             .gallery {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -124,11 +144,13 @@
 <body>
 
     <header>
-        <img src="logosurken.jpg.png" alt="Logo KKN Cirama Girang">
         <img src="sugihmukti.jpg.png" alt="Logo KKN Cirama Girang">
-        <img src="logokkn.jpg.png" alt="Logo KKN Cirama Girang">
+        <img src="logosurken.jpg.png" alt="Logo Universitas" class="logo-kanan">
         <div class="header-text"> <h1>KKN Desa Cirama Girang Tahun 2025</h1>
             <p>Mengabdi dan Berkembang Bersama Masyarakat</p>
+            <div>
+                <img src="logokkn.jpg.png" alt="Logo KKN Cirama Girang" class="logo-kkn">
+            </div>
     </header>
 
     <nav>
@@ -156,18 +178,19 @@
                 <img src="dpl1.jpg" alt="Sosialisasi Pertanian Organik">
                 <img src="pertemuan1.jpg" alt="Pendampingan UMKM Desa">
                 <img src="ciwi1.jpg" alt="Edukasi Literasi Digital">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+9" alt="Pertemuan dengan Tokoh Masyarakat">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+10" alt="Penanaman Bibit Pohon">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+11" alt="Kegiatan Olahraga Bersama Warga">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+12" alt="Kunjungan ke Puskesmas Desa">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+13" alt="Penyuluhan Hukum Dasar">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+14" alt="Pengenalan Sistem Irigasi Sederhana">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+15" alt="Perayaan Hari Kemerdekaan di Desa">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+16" alt="Pembagian Sembako (jika ada)">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+17" alt="Membuat Pupuk Kompos Bersama Petani">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+18" alt="Kelas Memasak Makanan Sehat">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+19" alt="Pengukuran Tanah untuk Pertanian">
-                <img src="https://via.placeholder.com/300x200?text=Kegiatan+20" alt="Pelepasan Tim KKN">
+                <img src="dpll.jpg" alt="Pertemuan dengan Tokoh Masyarakat">
+                <img src="ptkds.jpg" alt="Penanaman Bibit Pohon">
+                <img src="ptkds2.jpg" alt="Kegiatan Olahraga Bersama Warga">
+                <img src="kjb.jpg" alt="Kunjungan ke Puskesmas Desa">
+                <img src="kjb2.jpg" alt="Penyuluhan Hukum Dasar">
+                <img src="kjb3.jpg" alt="Pengenalan Sistem Irigasi Sederhana">
+                <img src="kjb4.jpg" alt="Perayaan Hari Kemerdekaan di Desa">
+                <img src="dpll2.jpg" alt="Pembagian Sembako (jika ada)">
+                <img src="posko,jpg.jpg" alt="Membuat Pupuk Kompos Bersama Petani">
+                <img src="ptkrtn.jpg" alt="Kelas Memasak Makanan Sehat">
+                <img src="kjb6.jpg" alt="Pengukuran Tanah untuk Pertanian">
+                <img src="kjb7.jpg" alt="Pelepasan Tim KKN">
+                <img src="kjb5.jpg" alt="Pelepasan Tim KKN">
             </div>
             <p class="mt-8 text-center text-gray-600">Kami berharap dokumentasi ini dapat memberikan gambaran lengkap mengenai dedikasi tim KKN di Desa Cirama Girang.</p>
         </section>

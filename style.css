@@ -40,15 +40,24 @@ header img {
 
 
 .header-text {
+    position: absolute;
     flex-grow: 1; 
     text-align: center;
     padding-left: 120px; 
 
     box-sizing: border-box;
-    margin-left: -453px;
+    margin-left: -0px;
+    margin-top: 50px;
 
 }
 
+.logo-kkn{
+    height: 150px;
+    width: auto;
+    position: relative;
+    margin-left: 1100px;
+    margin-top: -300px;
+}
 
 header h1 {
     margin: 0;
