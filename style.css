@@ -153,6 +153,178 @@ ul.list-style-disc li, ol.list-style-decimal li {
     transform: scale(1.03);
 }
 
+/* --- Program Unggulan Section --- */
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 25px; /* Space between program items */
+    margin-top: 25px;
+}
+
+.program-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.program-item img {
+    width: 100%; /* Make image fill the width of its container */
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without distorting */
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.program-item h3 {
+    color: #0056b3; /* A strong blue for headings */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.program-item p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block; /* Make it behave like a block but only take necessary width */
+    background-color: #28a745; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.text-center a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for program grid */
+@media (max-width: 768px) {
+    .program-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust min-width */
+    }
+}
+
+@media (max-width: 480px) {
+    .program-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+/* --- Berita Terbaru Section --- */
+#berita-terbaru {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for news items */
+    gap: 25px; /* Space between news items */
+    margin-top: 25px;
+}
+
+.news-item {
+    display: flex; /* Use flexbox for image and content side-by-side */
+    flex-direction: column; /* Stack image and content vertically on small screens */
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures image corners are rounded correctly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image covers the area */
+    border-bottom: 1px solid #eee; /* Separator for image and text */
+}
+
+.news-content {
+    padding: 15px 20px;
+}
+
+.news-content h3 {
+    font-size: 1.25em;
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.news-content .news-date {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.news-link {
+    display: inline-block;
+    color: #28a745; /* Green link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    color: #218838; /* Darker green on hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for news list */
+@media (max-width: 768px) {
+    .news-list {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .news-item {
+        flex-direction: column; /* Ensure stacked layout on small screens */
+    }
+}
+
 
 footer {
     background-color: #343a40;
