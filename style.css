@@ -46,7 +46,7 @@ header img {
     padding-left: 120px; 
 
     box-sizing: border-box;
-    margin-left: -0px;
+    margin-left: -13px;
     margin-top: 50px;
 
 }
@@ -132,7 +132,7 @@ ul.list-style-disc li, ol.list-style-decimal li {
     margin-bottom: 5px;
 }
 
-/* --- Gallery Styling --- */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
